@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Assassin";
+  src: url("./Fonts/Assassin.ttf");
+}
+
+body {
+	background-image: url("./Images/wallpaper.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.Fond {
+	
+}
+
+/* ------ page ------ */
+
+h1 {
+	font-size: 45px;
+	font-weight: bolder;
+}
+
+.Page {
+	position: relative;
+	margin:  2% 15%; 
+	text-align: center;
+	
+	font-family: "Assassin";
+	font-size: 20px;
+}
+
+.Page h2{
+	font-weight: bolder;
+	font-size: 30px;
+}
+.Page p{
+	font-weight: normal;
+	font-size: 23px;
+}
+
+
+
+/* ------ images fond ------*/
+
+.BluePrint {
+	opacity: 0.7;
+	width:  50%;
+}
+.FondBluePrint {
+	position: absolute;
+} 
