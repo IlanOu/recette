@@ -1,11 +1,41 @@
+/* --------- Polices --------- */
+
 @font-face {
   font-family: "Assassin";
   src: url("./Fonts/Assassin.ttf");
 }
 
-body {
-	
+* {
+	scroll-behavior: smooth;
+	text-shadow: 2px 2px #fff;
 }
+
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #603f1e #dfb87d;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #dfb87d;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #603f1e ;
+    border-radius: 10px;
+    border: 8px double #ff0f0f;
+  }
+
+
+/* --------- Background --------- */
 
 .BackGround {
 	position: fixed;
@@ -23,11 +53,28 @@ body {
 
 }
 
-/* ------ page ------ */
+.BackGround2 {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	display: block;
+	background-image: url("./Images/wallpaper.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	filter:  brightness(110%);
+	transform: rotate(180deg);
+
+}
+
+/* ------ Titre ------ */
 
 h1 {
 	z-index: 4;
-	font-size: 80px;
+	font-size: 8vw;
 	font-weight: bolder;
 
 }
@@ -38,15 +85,11 @@ h1 {
 	background-repeat: no-repeat;
 	background-position: center;
 	filter:  brightness(130%) hue-rotate(10deg);
-	
-
 }
 
 .LogoDiv {
 	width:  100%;
 	top:  -2%;
-	
-
 }
 
 .LogoDiv img {
@@ -62,38 +105,157 @@ h1 {
 }
 
 
+/* --------- Sommaire --------- */
+
+.papaSommaire {
+	position:  absolute;
+	right:  0;
+}
+
+.sommaire {
+	border:  double thick black;
+ 	position: fixed;
+ 	right:  0;
+ 	font-size: 1.5vw;
+ 	padding:  1.5vw;
+ 	width:11.5vw;
+}
+
+.sommaire a:link {
+  color: black;
+}
+
+.sommaire a:visited {
+  color: black;
+}
+
+.sommaire a:hover {
+	cursor: pointer;
+  color: black;
+  font-weight: bolder;
+}
+
+.sommaire a:active {
+  color: black;
+}
+
+
+/* --------- Menu --------- */
+
+.Menu {
+	padding:  30px;
+	width: auto;
+	height: auto;
+	position:  relative;
+	border: thick double;
+}
+
+
+.MenuItems {
+	color:  black;
+	font-size: 2vw;
+	top: 50%;
+	height: auto;
+	
+	font-style: underline;
+	margin-left: 0%;
+
+	padding:  10px;
+}
+
+
+
+
+
+.MenuItems a:link {
+  color: black;
+}
+
+.MenuItems a:visited {
+  color: black;
+}
+
+.MenuItems a:hover {
+	cursor: pointer;
+  color: black;
+  font-weight: bolder;
+}
+
+.MenuItems a:active {
+  color: black;
+}
+
+
+/* --------- Page --------- */
+
+
 .Page {
 	z-index: 2;
 	position: relative;
-	margin:  2% 15%; 
+	margin:  2vh 20vw; 
 	text-align: center;
 	font-family: "Assassin";
 }
 
 .Page h2{
+	margin-top:  10%;
 	font-weight: bolder;
-	font-size: 30px;
+	font-size: 3vw;
 	text-decoration:  underline;
 	text-decoration-color: red;
 }
 .Page h3{
+	margin-top:  8%;
 	font-weight: bolder;
-	font-size: 28px;
+	font-size: 2.5vw;
 	text-decoration:  underline;
 }
 .Page p{
-	font-size: 25px;
+	font-size: 2vw;
+
 
 }
 
-
-
-/* ------ images fond ------*/
-
-.BluePrint {
-	width:  50%;
+.paragraphes {
+	border-right: thick double;
 }
-.FondBluePrint {
-	z-index: 2;
+
+
+#Img1 {
+	border-radius: 10px;
+}
+
+#Fleche {
+	background-image: url("./Images/Fleche.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 	position: absolute;
-} 
+	width:  100%;
+	height:  100%;
+}
+
+
+/* --------- Signature + tampon --------- */
+
+.column1 {
+  float: left;
+  width: 50%;
+
+
+}
+
+.column1 img{
+	z-index: 2;
+}
+.column2 {
+  float: right;
+  width: 50%;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
